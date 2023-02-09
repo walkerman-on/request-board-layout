@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-black: #002033;
+    --color-black-alfa60: rgba(0, 32, 51, 0.6);
+    --color-blue-alfa-20: rgba(0, 65, 102, 0.2);
+    --color-white: white;
+    --color-button: #0078D2;
+    --color-orange: #FFA429;
+    --color-violet: #89258B;
+    --color-turquoise: #44CCDB;
+    --bg-light-gray-alfa50: rgba(236, 241, 244, 0.5);
+    --bg-dark-gray: #00426912;
+}
+
+
+* {
+    all: unset;
+    display: revert;
+    list-style: none;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+.header {
+    border-bottom: 1px solid var(--color-blue-alfa-20);
+}
+
+.container {
+    max-width: 1846px;
+    margin: 0 auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+
+}
+
+.menu-burger-img {
+    margin-right: 15px;
+}
+
+.navigation__title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navigation-menu__lk {
+    display: flex;
+    align-items: center;
+}
+
+.lk__img-container {
+    max-height: 32px;
+    max-width: 32px;
+    margin-right: 12px;
+}
+
+.lk-user-img {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 50%;
+}    
+
+.lk__user-info {
+    margin-right: 12px;
+}
+
+.user-name__link {
+    cursor: pointer;
+}
+.user-name {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.user-name:hover {
+    opacity: 0.7;
+}
+
+.user-admin {
+    display: block;
+    font-size: 12px;
+    color: var(--color-black-alfa60);
+    line-height: 13px;
+}
