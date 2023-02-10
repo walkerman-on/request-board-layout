@@ -32,9 +32,9 @@
     </header>
     <main class="main">
         <div class="container work-zone-container">
-            <div class="aside-container">
+            <div class="aside-bar">
                 <aside class="work-group">
-                    <div class="work-group-menu">
+                    <div class="work-group__menu">
                         <ul class="work-group__list">
                             <li class="work-group__item"><a href="#" class="work-group__link">Рабочая группа 1</a></li>
                             <li class="work-group__item"><a href="#" class="work-group__link work-group__link--active">Рабочая группа 2</a></li>
@@ -44,13 +44,25 @@
                             <span class="work-group-button-text">Добавить группу +</span>
                         </button>
                     </div>
-                    <div class="settings-menu">
-                        <img src="./img/settings-menu.svg" alt="Настройки" class="settings-menu-img">
-                        <a class="settings-menu__link">Настройки меню</a>
+                    <div class="work-group__settings">
+                        <img src="./img/settings-menu.svg" alt="Настройки" class="settings-img">
+                        <a class="settings__link">Настройки меню</a>
                     </div>
                 </aside>
             </div>
-            <div class="applications-container"></div>
+            <div class="applications">
+                <div class="applications__bar">
+                    <span class="applications-text">Заявки</span>
+                    <button class="applications-button" type="button">
+                        <span class="applications-button-text">+  Добавить сделку</span>
+                    </button>
+                    <form>
+                        <input type="text" name="form-search" class="applications__search-form" placeholder="Поиск по сделкам">
+                        <input type="submit" name="submit-search" class="applications__submit-form" value="Search">
+                    </form>
+                    <button class="applications-filtr" type="button">Фильтры</button>
+                </div>
+            </div>
         </div>
     </main>
 </body>
