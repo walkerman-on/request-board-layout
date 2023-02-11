@@ -109,9 +109,10 @@ body {
     line-height: 13px;
 }
 
-/* --- main (menu__sidebar) --- */
+/* --- menu__sidebar --- */ 
+
+/* не прижал "настройки" к низу */
 .menu {
-    /* display: flex; */
     display: grid;
     grid-template-columns: 247px 1fr;
 }
@@ -119,9 +120,6 @@ body {
 .menu__sidebar { 
     padding: 19px 68px 20px 0;
     border-right: 1px solid var(--color-blue-alfa-20);
-    display: grid;
-    grid-template-rows: auto 300px;
-
 }
 
 .sidebar__work-group {
@@ -176,6 +174,12 @@ body {
     gap: 12px;
 }
 
+.settings__link {
+  font-size: 12px;
+    color: var(--color-black-alfa60);
+    cursor: pointer;
+}
+
 
 
 /* .work-group__item::before {
@@ -191,78 +195,84 @@ body {
 
 
 
-.settings__link {
-    font-size: 12px;
-    color: var(--color-black-alfa60);
-    cursor: pointer;
-}
 
 
 
 
 
 
-/* --- main (menu__main) --- */
 
-.menu-main {
-}
+/* --- menu__main --- */
 
-.main__bar {
+.menu__main {
     padding: 52px 24px 56px 40px;
     display: flex;
     flex-direction: column;
     gap: 28px;
 }
 
-/* Сделал до этого момента */
-.applications-text {
+.main__bar{
+    display: grid;  
+    grid-template-columns: 310px 1fr 152px;
+}
+
+.bar__request {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    margin-right: 12px;
+}
+
+
+.request-text {
     font-size: 24px;
     font-weight: 700;
     color: var(--color-black);
 }
 
-.applications-button {
+.request__button {
     background-color: var(--color-button);
     border-radius: 4px;
-    width: 201px;
+    /* width: 201px; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 16px;
-    padding: 10px 0;
+    padding: 11px 18px;
     cursor: pointer;
-
 }
 
 
-.applications-button:hover {
+.request__button:hover {
     opacity: 0.8;
 }
 
-.applications-button-text {
+.request__button-text {
     color: var(--color-white);
     font-weight: 300;
 }
 
-.applications__form {
+.bar__request-form {
     display: flex;
+    margin-right: 16px;
 }
 
-.applications__search-form {
+.request-form__search {
     border: 1px solid var(--color-blue-alfa-28);
     border-radius: 4px 0 0 4px;
     padding: 10px 18px;
+    width: 100%;
 }
 
 
-.applications__submit-form {
+.request-form__submit {
     border: 1px solid var(--color-blue-alfa-28);
     border-radius: 0 4px 4px 0;
     padding: 10px 18px;
     cursor: pointer;
 }
 
-.applications__button-filtr {
+.bar__button-filtr {
     background-color: var(--color-blue-alfa-7);
     border-radius: 4px;
     padding: 11px 18px;
@@ -271,7 +281,7 @@ body {
     width: 152px;
 }
 
-.applications__button-filtr-text {
+.bar__button-filtr-text {
     color: var(--color-blue-alfa80);
 }
 
@@ -279,13 +289,10 @@ body {
     opacity: 0.8;
 }
 
-.applicaions__container {
+/* .applicaions__container {
     display: flex;
     align-items: center;
     gap: 11px;
-}
+} */
 
-.main__bar{
-    display: grid;
-   grid-template-columns: 290px 1fr 152px;
-}
+

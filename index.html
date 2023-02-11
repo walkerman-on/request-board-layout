@@ -50,26 +50,24 @@
                         <a class="settings__link">Настройки меню</a>
                     </div>
                 </aside>
+
+                <!-- сделал до этого момента -->
                 <div class="menu__main">
                     <div class="main__bar">
-                        <div class="applicaions__container">
-
-                            <span class="applications-text">Заявки</span>
-                            <button class="applications-button" type="button">
-                                <span class="applications-button-text">+</span>
-                                <span class="applications-button-text">Добавить сделку</span>
+                        <div class="bar__request">
+                            <span class="request-text">Заявки</span>
+                            <button class="request__button" type="button">
+                                <span class="request__button-text">+</span>
+                                <span class="request__button-text">Добавить сделку</span>
                             </button>
                         </div>
-                  
-                        <form class="applications__form">
-                            <input type="text" name="form-search" class="applications__search-form" placeholder="Поиск по сделкам">
-                            <input type="submit" name="submit-search" class="applications__submit-form" value="Search">
+                        <form class="bar__request-form">
+                            <input type="text" name="form-search" class="request-form__search" placeholder="Поиск по сделкам">
+                            <input type="submit" name="submit-search" class="request-form__submit" value="Search">
                         </form>
-               
-    
-                            <button class="applications__button-filtr" type="button">
-                                <span class="applications__button-filtr-text">Фильтры</span>
-                            </button>
+                        <button class="bar__button-filtr" type="button">
+                            <span class="bar__button-filtr-text">Фильтры</span>
+                        </button>
                     </div>
                     <div class="applications__cards"></div>
                 </div>
