@@ -41,27 +41,30 @@ body {
 }
 
 .container {
-    margin: 0 auto;
-    padding: 0 22px 0 24px;
+    padding: 0 24px 0 22px;
 }
 
+
+/* --- navigation --- */
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 8px;
+    padding: 13px 7px;
 }
 
-.menu-burger-img {
-    margin-right: 15px;
+.navigation__menu-burger {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
-.navigation__title {
+.menu-burger-title {
     font-size: 18px;
     font-weight: 700;
 }
 
-.navigation-menu__lk {
+.navigation__menu-lk {
     display: flex;
     align-items: center;
 }
@@ -72,7 +75,7 @@ body {
     margin-right: 12px;
 }
 
-.lk-user-img {
+.lk-img {
     height: 100%;
     width: auto;
     overflow: hidden;
@@ -84,9 +87,6 @@ body {
     margin-right: 12px;
 }
 
-.user-name__link {
-    cursor: pointer;
-}
 .user-name {
     display: block;
     font-size: 16px;
@@ -94,26 +94,37 @@ body {
     margin-bottom: 4px;
 }
 
+.user-name__link {
+    cursor: pointer;
+}
+
 .user-name:hover {
     opacity: 0.7;
 }
 
-.user-admin {
+.user-staff {
     display: block;
     font-size: 12px;
     color: var(--color-black-alfa60);
     line-height: 13px;
 }
 
-.work-zone-container {
+/* --- main (menu__sidebar) --- */
+.menu {
     display: flex;
 }
 
-.work-group { 
-    padding: 19px 71px 20px 0;
+.menu__sidebar { 
+    padding: 19px 68px 20px 0;
     display: flex;
     flex-direction: column;
     border-right: 1px solid var(--color-blue-alfa-20);
+}
+
+.sidebar__work-group {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
 }
 
 .work-group__list {
@@ -136,31 +147,33 @@ body {
     opacity: 0.7;
 }
 
-
-.work-group__menu {
-    display: flex;
-    flex-direction: column;
-    gap: 31px;
-    /* flex: 1; */
-}
-
-.work-group-button {
+.work-group__button {
     background-color: var(--color-white);
     border: 1px solid var(--color-button);
-    padding: 5px 18px;
+    padding: 7px 18px;
     border-radius: 99px;
     cursor: pointer;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-.work-group-button:hover {
+.work-group__button:hover {
     opacity: 0.7;
 }
 
-.work-group-button-text {
+.work-group__button-text {
     font-size: 14px;
     color: var(--color-button);
 }
+
+.sidebar__settings {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
 
 /* .work-group__item::before {
     content: "12";
@@ -171,13 +184,7 @@ body {
     border-radius: 50px;
 } */
 
-.work-group__settings {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    position:fixed;
-    bottom: 20px;
-}
+
 
 
 
@@ -192,24 +199,20 @@ body {
 
 
 
+/* --- main (menu__main) --- */
 
+.menu-main {
+    max-width: 100%;
+}
 
-.applications {
+.main__bar {
     padding: 52px 24px 56px 40px;
     display: flex;
     flex-direction: column;
     gap: 28px;
-    margin: 0 auto; 
 }
 
-.applications__bar {
-    display: flex;
-    align-items: center;
-    /* min-width: 500px;  */
-    justify-content: space-between;
-
-}
-
+/* Сделал до этого момента */
 .applications-text {
     font-size: 24px;
     font-weight: 700;
