@@ -50,8 +50,6 @@
                         <a class="settings__link">Настройки меню</a>
                     </div>
                 </aside>
-
-                <!-- сделал до этого момента -->
                 <div class="menu__main">
                     <div class="main__bar">
                         <div class="bar__request">
@@ -63,10 +61,16 @@
                         </div>
                         <form class="bar__request-form">
                             <input type="text" name="form-search" class="request-form__search" placeholder="Поиск по сделкам">
-                            <input type="submit" name="submit-search" class="request-form__submit" value="Search">
+                            <img src="./img/cancel-search.svg" alt="Отмена поиска" class="request-form__search-img">
+                            <button type="submit" name="submit-search" class="request-form__submit">
+                                <img src="./img/search.svg" alt="Поиск" class="request-form__submit-img">
+                            </button>
                         </form>
                         <button class="bar__button-filtr" type="button">
-                            <span class="bar__button-filtr-text">Фильтры</span>
+                            <span class="button-filtr-text">Фильтры</span>
+                            <div class="button-filtr-bg">
+                                <span class="button-filtr-amount">5</span>
+                            </div>
                         </button>
                     </div>
                     <div class="applications__cards"></div>
