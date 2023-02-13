@@ -202,6 +202,8 @@ body {
     gap: 28px;
 }
 
+/* --- main__bar --- */
+
 .main__bar{
     display: grid;  
     grid-template-columns: auto 1fr auto;
@@ -215,7 +217,6 @@ body {
     align-items: center;
     margin-right: 12px;
 }
-
 
 .request-text {
     font-size: 24px;
@@ -319,18 +320,20 @@ body {
     font-weight: 600;
 }
 
-.applications__list {
+/* --- main__application --- */
+.applications-columns__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
     gap: 16px;
 }
 
-.applications__item {
+.applications-columns__cards-container {
     background-color: var(--bg-light-gray-alfa50);
+    background-color: var(--color-black);
     border-radius: 4px;
 }
 
-.applications__item-container {
+.applications__cards-container {
     padding: 14px 8px 0px 8px;
     display: flex;
     flex-direction: column;
@@ -389,4 +392,69 @@ body {
     border-radius: 4px;
     border-top: 4px solid var(--color-orange);
     box-shadow: 0px 2px 2px rgba(0, 32, 51, 0.02), 0px 2px 8px rgba(0, 32, 51, 0.16);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.cards-task {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cards-price {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cards-date {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--color-black-alfa60)
+}
+
+.cards__info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cards__social-block {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.social-block-img {
+    width: 10px;
+    height: 10px;
+}
+
+.cards__up-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards__change-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.cards__maker-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.lk__user {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cards__edit-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
