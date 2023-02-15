@@ -1,0 +1,90 @@
+{
+    "applications-category": [
+        {
+            "id": 1,
+            "name": "Входящие"
+        },
+        {
+            "id": 2,
+            "name": "В работе"
+        },
+        {
+            "id": 3,
+            "name": "На согласовании"
+        },
+        {
+            "id": 4,
+            "name": "Готов"
+        },
+        {
+            "id": 5,
+            "name": "К отгрузке"
+        }
+    ],
+
+    "applications" : [
+        {
+            "title": "Ошибка датчика КП-312",
+            "price": "2 500 ₽",
+            "date": "21 января 2022",
+            "date-change": "2 февраля 2022",
+            "executor": "Иван Васильев",
+            "executor-photo": "./img/executor-photo/IvanVasilyev.jpg",
+            "applications-category_id": 1
+        },
+        {
+            "title": "Тех обслуживание насоса ВР-231",
+            "price": "500 ₽",
+            "date": "21 января 2022",
+            "date-change": "2 февраля 2022",
+            "executor": "Татьяна Андреева",
+            "executor-photo": "./img/executor-photo/TatyanaAndreeva.jpg",
+            "applications-category_id": 1
+        },
+        {
+            "title": "Авария на ТП-123",
+            "price": "2 500 ₽",
+            "date": "21 января 2022",
+            "date-change": "2 февраля 2022",
+            "executor": "Джон Траволта",
+            "executor-photo": "./img/executor-photo/JohnTravolta.jpg",
+            "applications-category_id": 1
+        },
+        {
+            "title": "Подключение системы ",
+            "price": "1 700 ₽",
+            "date": "21 января 2022",
+            "date-change": "2 февраля 2022",
+            "executor": "Джон Траволта",
+            "executor-photo": "./img/executor-photo/JohnTravolta.jpg",
+            "applications-category_id": 2
+        },
+        {
+            "title": "Поверка датчиков на УПН-231",
+            "price": "2 500 ₽",
+            "date": "21 января 2022",
+            "date-change": "2 февраля 2022",
+            "executor": "Дмитрий Сухоруков",
+            "executor-photo": "./img/executor-photo/DmitriySuhorukov.jpg",
+            "applications-category_id": 2
+        },
+        {
+            "title": "Обновление ПО",
+            "price": "2 500 ₽",
+            "date": "21 января 2022",
+            "date-change": "2 февраля 2022",
+            "executor": "Иван Васильев",
+            "executor-photo": "./img/executor-photo/IvanVasilyev.jpg",
+            "applications-category_id": 3
+        },
+        {
+            "title": "Корректировка значений по ВКУ-321",
+            "price": "2 500 ₽",
+            "date": "21 января 2022",
+            "date-change": "2 февраля 2022",
+            "executor": "Ольга Андреева",
+            "executor-photo": "./img/executor-photo/OlgaAndreeva.jpg",
+            "applications-category_id": 4
+        }
+    ]
+}

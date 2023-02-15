@@ -225,10 +225,10 @@ body {
 /* --- main__bar --- */
 
 .main__bar{
-    display: grid;  
-    grid-template-columns: auto 1fr auto;
-    grid-row-gap: 10px;
+    display: flex;  
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .bar__request {
@@ -269,6 +269,7 @@ body {
     display: flex;
     margin-right: 16px;
     position: relative;
+    flex: 1;
 }
 
 .request-form__search {
