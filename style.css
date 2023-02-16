@@ -363,12 +363,10 @@ body {
     gap: 8px;
 }
 
-
 .column-container__brief-info {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    flex: 1;
 }
 
 .brief-info-title {
@@ -430,14 +428,20 @@ body {
     color: var(--color-blue-alfa80);
 }
 
+.column-container__cards {
+
+}
+
 .cards__list {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
     /* height: 360px; */
     /* -- scroll -- */
-    overflow: auto;
-    scroll-snap-type: y mandatory;
+    /* overflow: auto;
+    scroll-snap-type: y mandatory; */
+
 }
 
 .cards {

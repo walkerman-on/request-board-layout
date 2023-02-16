@@ -1,5 +1,5 @@
 {
-    "applications-category": [
+    "category": [
         {
             "id": 1,
             "name": "Входящие"
@@ -30,7 +30,7 @@
             "date-change": "2 февраля 2022",
             "executor": "Иван Васильев",
             "executor-photo": "./img/executor-photo/IvanVasilyev.jpg",
-            "applications-category_id": 1
+            "category_id": 1
         },
         {
             "title": "Тех обслуживание насоса ВР-231",
@@ -39,7 +39,7 @@
             "date-change": "2 февраля 2022",
             "executor": "Татьяна Андреева",
             "executor-photo": "./img/executor-photo/TatyanaAndreeva.jpg",
-            "applications-category_id": 1
+            "category_id": 1
         },
         {
             "title": "Авария на ТП-123",
@@ -48,7 +48,7 @@
             "date-change": "2 февраля 2022",
             "executor": "Джон Траволта",
             "executor-photo": "./img/executor-photo/JohnTravolta.jpg",
-            "applications-category_id": 1
+            "category_id": 1
         },
         {
             "title": "Подключение системы ",
@@ -57,7 +57,7 @@
             "date-change": "2 февраля 2022",
             "executor": "Джон Траволта",
             "executor-photo": "./img/executor-photo/JohnTravolta.jpg",
-            "applications-category_id": 2
+            "category_id": 2
         },
         {
             "title": "Поверка датчиков на УПН-231",
@@ -66,7 +66,7 @@
             "date-change": "2 февраля 2022",
             "executor": "Дмитрий Сухоруков",
             "executor-photo": "./img/executor-photo/DmitriySuhorukov.jpg",
-            "applications-category_id": 2
+            "category_id": 2
         },
         {
             "title": "Обновление ПО",
@@ -75,7 +75,7 @@
             "date-change": "2 февраля 2022",
             "executor": "Иван Васильев",
             "executor-photo": "./img/executor-photo/IvanVasilyev.jpg",
-            "applications-category_id": 3
+            "category_id": 3
         },
         {
             "title": "Корректировка значений по ВКУ-321",
@@ -84,7 +84,7 @@
             "date-change": "2 февраля 2022",
             "executor": "Ольга Андреева",
             "executor-photo": "./img/executor-photo/OlgaAndreeva.jpg",
-            "applications-category_id": 4
+            "category_id": 4
         }
     ]
 }
