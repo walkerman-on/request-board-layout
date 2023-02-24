@@ -125,7 +125,7 @@ body {
 /* --- menu --- */ 
 .menu {
     display: grid;
-    grid-template-columns: minmax(190px, 245px) 1fr;
+    grid-template-columns: 200px 1fr;
     flex-grow: 1;
 }
 
@@ -229,13 +229,14 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 12px;
 }
 
 .bar__request {
     display: flex;
     gap: 11px;
     align-items: center;
-    margin-right: 12px;
+    /* margin-right: 12px; */
 }
 
 .request-text {
@@ -267,7 +268,6 @@ body {
 
 .bar__request-form {
     display: flex;
-    margin-right: 16px;
     position: relative;
     flex: 1;
 }
@@ -307,7 +307,7 @@ body {
 .bar__button-filtr {
     background-color: var(--color-blue-alfa-7);
     border-radius: 4px;
-    padding: 10px 18px;
+    padding: 9px 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -347,7 +347,7 @@ body {
 }
 .applications-columns__list {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 16px;
 }
 
