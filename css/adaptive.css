@@ -1,0 +1,141 @@
+/*  Large Devices, Wide Screens */
+@media only screen and (max-width: 1920px) {
+    
+}
+
+@media only screen and (max-width: 1280px) {
+    
+}
+
+@media only screen and (max-width: 375px) {
+    
+}
+
+@media only screen and (max-width: 850px) {
+    .bar__button-filtr {
+        order: -2;
+    }
+    .bar__request {
+        order: -3;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    /* -- navigation -- */
+    .container {
+        padding: 0 10px;
+    }
+
+    .menu-burger-title {
+        font-size: 15px;
+    }
+
+    .lk__img-container {
+        height:50px;
+        width: 50px;
+    }
+
+    .lk__user-info {
+        display: none;
+    }
+
+    /* -- menu__sidebar -- */
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__sidebar-container {
+        border-right: 0;
+    }
+
+    .menu__sidebar {
+        padding: 15px 0 0 0;
+    }
+
+    .sidebar__work-group {
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-group__button {
+        width: 150px;
+        height: 25px;
+    }
+
+    .work-group__button-text {
+        font-size: 12px;
+    }
+
+    .sidebar__settings {
+        display: none;
+    }
+
+    .work-group__list {
+        display: flex;  
+        flex-direction: row;
+    }
+
+    .work-group__item {
+        font-size: 12px;
+    }
+
+    /* -- menu__main -- */
+
+    .menu__main {
+        padding: 15px 10px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .request-text {
+        font-size: 18px;
+    }
+
+    .request__button {
+        width: 120px;
+        height: 28px;
+        gap: 10px;
+    }
+
+    .request__button-text, 
+    .button-filtr-text,
+    .work-group__button-text {
+        font-size: 12px;
+    }
+
+    .bar__button-filtr {
+        padding: 7px;
+        gap: 5px;
+    }
+
+    .button-filtr-bg {
+        height: 16px;
+        width: 22px;
+    }
+
+    .button-filtr-amount {
+        font-size: 8px;
+    }
+
+    .request-form__search {
+        padding: 5px;
+    }
+
+    .request-form__search::placeholder {
+        font-size: 12px;
+    }
+
+    .request-form__submit {
+        padding: 5px 10px;
+    }
+
+    .request-form__search-img {
+        top: 12px;
+        right: 42px;
+    }
+}
+

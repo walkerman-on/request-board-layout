@@ -112,7 +112,6 @@ body {
     color: var(--color-black-alfa60);
 }
 
-
 .main {
     flex-grow: 1;
     display: flex;
