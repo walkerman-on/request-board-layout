@@ -60,3 +60,9 @@ applicationsCards.forEach(item => {
 
 
 
+
+
+
+
+
+
