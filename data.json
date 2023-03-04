@@ -28,8 +28,7 @@
             "price": "2 500 ₽",
             "date": "21 января 2022",
             "date-change": "2 февраля 2022",
-            "executor": "Иван Васильев",
-            "executor-photo": "./img/executor-photo/IvanVasilyev.jpg",
+            "executor": 123,
             "category_id": 1
         },
         {
@@ -73,8 +72,7 @@
             "price": "2 500 ₽",
             "date": "21 января 2022",
             "date-change": "2 февраля 2022",
-            "executor": "Иван Васильев",
-            "executor-photo": "./img/executor-photo/IvanVasilyev.jpg",
+            "executor": 123,
             "category_id": 3
         },
         {
@@ -85,6 +83,14 @@
             "executor": "Ольга Андреева",
             "executor-photo": "./img/executor-photo/OlgaAndreeva.jpg",
             "category_id": 4
+        }
+    ],
+    "executors": [
+        {
+            "id": 123,
+            "name": "Иван Васильев",
+            "workAmount": 3,
+            "imgSrc": "./img/executor-photo/IvanVasilyev.jpg"
         }
     ]
 }
