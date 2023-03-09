@@ -25,66 +25,92 @@
     "applications" : [
         {
             "title": "Ошибка датчика КП-312",
-            "price": "2 500 ₽",
-            "date": "21 января 2022",
-            "date-change": "2 февраля 2022",
-            "executor": "Иван Васильев",
-            "executor-photo": "./img/executor-photo/IvanVasilyev.jpg",
+            "price": 2500,
+            "date": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "date-change": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "executor_id": 100,
             "category_id": 1
         },
         {
             "title": "Тех обслуживание насоса ВР-231",
-            "price": "500 ₽",
-            "date": "21 января 2022",
-            "date-change": "2 февраля 2022",
-            "executor": "Татьяна Андреева",
-            "executor-photo": "./img/executor-photo/TatyanaAndreeva.jpg",
+            "price": 500,
+            "date": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "date-change": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "executor_id": 104,
             "category_id": 1
         },
         {
             "title": "Авария на ТП-123",
-            "price": "2 500 ₽",
-            "date": "21 января 2022",
-            "date-change": "2 февраля 2022",
-            "executor": "Джон Траволта",
-            "executor-photo": "./img/executor-photo/JohnTravolta.jpg",
+            "price": 500,
+            "date": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "date-change": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "executor_id": 103,
             "category_id": 1
         },
         {
             "title": "Подключение системы ",
-            "price": "1 700 ₽",
-            "date": "21 января 2022",
-            "date-change": "2 февраля 2022",
-            "executor": "Джон Траволта",
-            "executor-photo": "./img/executor-photo/JohnTravolta.jpg",
+            "price": 1700,
+            "date": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "date-change": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "executor_id": 103,
             "category_id": 2
         },
         {
             "title": "Поверка датчиков на УПН-231",
-            "price": "2 500 ₽",
-            "date": "21 января 2022",
-            "date-change": "2 февраля 2022",
-            "executor": "Дмитрий Сухоруков",
-            "executor-photo": "./img/executor-photo/DmitriySuhorukov.jpg",
+            "price": 2500,
+            "date": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "date-change": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "executor_id": 102,
             "category_id": 2
         },
         {
             "title": "Обновление ПО",
-            "price": "2 500 ₽",
-            "date": "21 января 2022",
-            "date-change": "2 февраля 2022",
-            "executor": "Иван Васильев",
-            "executor-photo": "./img/executor-photo/IvanVasilyev.jpg",
+            "price": 2500,
+            "date": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "date-change": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "executor_id": 100,
             "category_id": 3
         },
         {
             "title": "Корректировка значений по ВКУ-321",
-            "price": "2 500 ₽",
-            "date": "21 января 2022",
-            "date-change": "2 февраля 2022",
-            "executor": "Ольга Андреева",
-            "executor-photo": "./img/executor-photo/OlgaAndreeva.jpg",
+            "price": 2500,
+            "date": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "date-change": "Mon Oct 11 2021 16:58:58 GMT+0300 (Moscow Standard Time)",
+            "executor_id": 101,
             "category_id": 4
         }
+    ],
+
+    "executors": [
+        {
+            "id": 100,
+            "name": "Иван Васильев",
+            "photo": "./img/executor-photo/IvanVasilyev.jpg",
+            "workAmount": 2
+        },
+        {
+            "id": 101,
+            "name": "Ольга Андреева",
+            "photo": "./img/executor-photo/OlgaAndreeva.jpg",
+            "workAmount": 1
+        },
+        {
+            "id": 102,
+            "name": "Дмитрий Сухоруков",
+            "photo": "./img/executor-photo/DmitriySuhorukov.jpg",
+            "workAmount": 1
+        },
+        {
+            "id": 103,
+            "name": "Джон Траволта",
+            "photo": "./img/executor-photo/JohnTravolta.jpg",
+            "workAmount": 2
+        },
+        {
+            "id": 104,
+            "name": "Татьяна Андреева",
+            "photo": "./img/executor-photo/TatyanaAndreeva.jpg",
+            "workAmount": 1
+        } 
     ]
 }

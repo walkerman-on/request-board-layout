@@ -1,4 +1,4 @@
-import data from "./data.json" assert {type: 'json'};
+import data from "../data.json" assert {type: 'json'};
 
 const applicationsCategory = data.category;
 const applicationsCategoryTemplate = document.getElementById("applications-category__item");
@@ -23,6 +23,9 @@ applicationsCards.forEach(item => {
 
     applicationsCardsContainer.appendChild(element)
 })
+
+
+
 
 
 
