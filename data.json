@@ -2,23 +2,28 @@
     "category": [
         {
             "id": 1,
-            "name": "Входящие"
+            "name": "Входящие",
+            "workAmount": 3
         },
         {
             "id": 2,
-            "name": "В работе"
+            "name": "В работе",
+            "workAmount": 2
         },
         {
             "id": 3,
-            "name": "На согласовании"
+            "name": "На согласовании",
+            "workAmount": 1
         },
         {
             "id": 4,
-            "name": "Готов"
+            "name": "Готов",
+            "workAmount": 1
         },
         {
             "id": 5,
-            "name": "К отгрузке"
+            "name": "К отгрузке",
+            "workAmount": 0
         }
     ],
 
