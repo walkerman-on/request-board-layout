@@ -1,13 +1,22 @@
-export const renderCards = (cards) => {
+const defaultCard = {
+    title: "Неизвестная заявка",
+    price: "Неизвестная сумма",
+    date: "Неизвестная дата",
+    dateChange: "Неизвестная дата",
+    executor: "Неизвестный",
+    executorImg: "../img/executor-photo/IvanVasilyev.jpg"
+}
+
+export const renderCards = (card) => {
     const template = document.createElement("template");
     template.innerHTML = `
         <li class="cards__item-container">
             <div class="cards">
                 <div class="cards__first-block">
                     <p class="first-block__info">
-                        <span class="cards__primery-text">Ошибка датчика КП-312</span>
-                        <span class="cards__secondary-text">2 500 ₽</span>
-                        <span class="cards__tertiary-text">21 января 2022</span>
+                        <span class="cards__primery-text">${card?.title || defaultCard.title}</span>
+                        <span class="cards__secondary-text"${card?.price || defaultCard.price} ₽</span>
+                        <span class="cards__tertiary-text">${card?.date || defaultCard.date}</span>
                     </p>
                     <div class="first-block__contact">
                         <img src="./img/phone-icon.svg" alt="Иконка телефона" class="contact-img">
@@ -16,9 +25,9 @@ export const renderCards = (cards) => {
                     </div>
                 </div>
                 <div class="cards__second-block">
-                    <p class="second-block__date-change">
+                    <p class="second-block__dateChange">
                         <span class="cards__tertiary-text">Дата изменения</span>
-                        <span class="cards__secondary-text">2 февраля 2022</span>
+                        <span class="cards__secondary-text">${card?.dateChange || defaultCard.dateChange}</span>
                     </p>
                 </div>
                 <div class="cards__third-block">
@@ -48,6 +57,6 @@ export const renderCards = (cards) => {
         </li>
     `
 
-    const container = document.getElementById(cards?.category_id)
+    const container = document.getElementById(card?.category_id);
     container.appendChild(template.content)
 }

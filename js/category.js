@@ -1,4 +1,7 @@
+import data from "../data.json" assert {type: 'json'};
 import { renderCards } from "./card.js";
+
+const applicationsCards = data.applications;
 
 export const renderCategory = (category) => {
     const template = document.createElement("template");
@@ -27,7 +30,9 @@ export const renderCategory = (category) => {
     const container = document.querySelector(".applications-columns__list");
     container.appendChild(template.content);
 
-    // applicationsCards.forEach((cards) => {
-    //     renderCards(cards)
-    // })
+    const cards = applicationsCards.filter( card => card?.category_id === category?.id )
+    cards.forEach(card => {
+        renderCards(card)
+    })
 }
+
