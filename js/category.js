@@ -22,7 +22,7 @@ export const renderCategory = (category) => {
                     </button>
                 </div>
                 <div class="column-container__cards">
-                    <ul class="cards__list id="${category?.id}"></ul>
+                    <ul class="cards__list" id=${category?.id}></ul>
                 </div>
             </div>
         </li>
