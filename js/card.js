@@ -1,6 +1,8 @@
+import { formattedDate } from "./helper.js"
+
 const defaultCard = {
     title: "Неизвестная заявка",
-    price: "Неизвестная сумма",
+    price: "---",
     date: "Неизвестная дата",
     dateChange: "Неизвестная дата",
     executor: "Неизвестный",
@@ -15,8 +17,8 @@ export const renderCards = (card) => {
                 <div class="cards__first-block">
                     <p class="first-block__info">
                         <span class="cards__primery-text">${card?.title || defaultCard.title}</span>
-                        <span class="cards__secondary-text"${card?.price || defaultCard.price} ₽</span>
-                        <span class="cards__tertiary-text">${card?.date || defaultCard.date}</span>
+                        <span class="cards__secondary-text">${card?.price || defaultCard.price} ₽</span>
+                        <span class="cards__tertiary-text">${formattedDate(card?.date) || defaultCard.date}</span>
                     </p>
                     <div class="first-block__contact">
                         <img src="./img/phone-icon.svg" alt="Иконка телефона" class="contact-img">
@@ -27,7 +29,7 @@ export const renderCards = (card) => {
                 <div class="cards__second-block">
                     <p class="second-block__dateChange">
                         <span class="cards__tertiary-text">Дата изменения</span>
-                        <span class="cards__secondary-text">${card?.dateChange || defaultCard.dateChange}</span>
+                        <span class="cards__secondary-text">${formattedDate(card?.dateChange) || defaultCard.dateChange}</span>
                     </p>
                 </div>
                 <div class="cards__third-block">

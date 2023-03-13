@@ -58,7 +58,7 @@
     justify-content: space-between;
 }
 
-.second-block__date-change {
+.second-block__dateChange {
     display: flex;
     flex-direction: column;
     gap: 4px;
