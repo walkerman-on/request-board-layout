@@ -1,4 +1,7 @@
-import { formattedDate } from "./helper.js"
+import { formattedDate } from "./helper.js";
+import data from "../data.json" assert {type: 'json'};
+
+const executors = data.executors;
 
 const defaultCard = {
     title: "Неизвестная заявка",
@@ -10,6 +13,8 @@ const defaultCard = {
 }
 
 export const renderCards = (card) => {
+    const executorData = executors?.find(ex => ex?.id === card?.executor_id);
+
     const template = document.createElement("template");
     template.innerHTML = `
         <li class="cards__item-container">
@@ -39,7 +44,7 @@ export const renderCards = (card) => {
                             <div class="executor__img-container">
                                 <img class ="executor-img" src="./img/user-avatar.jpg" alt="Аватар исполнителя">
                             </div>
-                            <a href="#" class="executor__link cards__tertiary-text">Иван Васильев</a>                                                                </a>
+                            <a href="#" class="executor__link cards__tertiary-text">${executorData.name || defaultCard.executor}</a>                                                                </a>
                         </div>
                     </div>
                     <div class="third-block__change-card">
@@ -60,5 +65,9 @@ export const renderCards = (card) => {
     `
 
     const container = document.getElementById(card?.category_id);
-    container.appendChild(template.content)
+    container.appendChild(template.content);
+
+
+    const cardBorder = document.querySelector(".cards");
+    cardBorder.classList.add("cards-border__orange")
 }

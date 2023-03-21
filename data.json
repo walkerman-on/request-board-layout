@@ -91,31 +91,36 @@
             "id": 100,
             "name": "Иван Васильев",
             "photo": "./img/executor-photo/IvanVasilyev.jpg",
-            "workAmount": 2
+            "workAmount": 2,
+            "color": "cards-border__orange"
         },
         {
             "id": 101,
             "name": "Ольга Андреева",
             "photo": "./img/executor-photo/OlgaAndreeva.jpg",
-            "workAmount": 1
+            "workAmount": 1,
+            "color": "cards-border__violet"
         },
         {
             "id": 102,
             "name": "Дмитрий Сухоруков",
             "photo": "./img/executor-photo/DmitriySuhorukov.jpg",
-            "workAmount": 1
+            "workAmount": 1,
+            "color": "cards-border__turquoise"
         },
         {
             "id": 103,
             "name": "Джон Траволта",
             "photo": "./img/executor-photo/JohnTravolta.jpg",
-            "workAmount": 2
+            "workAmount": 2,
+            "color": "cards-border__red"
         },
         {
             "id": 104,
             "name": "Татьяна Андреева",
             "photo": "./img/executor-photo/TatyanaAndreeva.jpg",
-            "workAmount": 1
+            "workAmount": 1,
+            "color": "cards-border__button"
         } 
     ]
 }
