@@ -3,6 +3,12 @@ import { renderCards } from "./card.js";
 
 const applicationsCards = data.applications;
 
+const defaultCategory = {
+    name: "Неизвестно",
+    workAmount: "--",
+    totalPrice: "---"
+}
+
 export const renderCategory = (category) => {
     const template = document.createElement("template");
     template.innerHTML = `
@@ -10,12 +16,12 @@ export const renderCategory = (category) => {
             <div class="column-container">
                 <div class="column-container__brief-info">
                     <div class="brief-info-title">
-                        <span class="brief-info-title__cards-category">${category?.name}</span>
+                        <span class="brief-info-title__cards-category">${category?.name || defaultCategory?.name}</span>
                         <div class="brief-info-title__work-bg">
-                            <span class="brief-info-title__work-amount">${category?.workAmount || 0}</span>
+                            <span class="brief-info-title__work-amount">${category?.workAmount || defaultCategory.workAmount}</span>
                         </div>
                     </div>
-                    <span class="brief-info__cards-price">${category?.totalPrice || 0} ₽</span>
+                    <span class="brief-info__cards-price">${category?.totalPrice || defaultCategory.totalPrice} ₽</span>
                     <button class="brief-info__button" type="button">
                         <span class="brief-info__button-text">+</span>
                         <span class="brief-info__button-text">Быстрая сделка</span>

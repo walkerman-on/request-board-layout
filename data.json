@@ -3,27 +3,32 @@
         {
             "id": 1,
             "name": "Входящие",
-            "workAmount": 3
+            "workAmount": 3,
+            "totalPrice": 3500
         },
         {
             "id": 2,
             "name": "В работе",
-            "workAmount": 2
+            "workAmount": 2,
+            "totalPrice": 4200
         },
         {
             "id": 3,
             "name": "На согласовании",
-            "workAmount": 1
+            "workAmount": 1,
+            "totalPrice": 2500
         },
         {
             "id": 4,
             "name": "Готов",
-            "workAmount": 1
+            "workAmount": 1,
+            "totalPrice": 2500
         },
         {
             "id": 5,
             "name": "К отгрузке",
-            "workAmount": 0
+            "workAmount": 0,
+            "totalPrice": 0
         }
     ],
 
