@@ -7,6 +7,13 @@ applicationsCategory.forEach((category) => {
     renderCategory(category)
 })
 
+const buttonDropdown = document.querySelector(".dropdown-button");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+buttonDropdown.onclick = () => {    
+    dropdownMenu.classList.toggle("dropdown-menu__active")
+}
+
 
 
 

@@ -3,11 +3,15 @@
     flex-direction: column;
     gap: 8px;
 
-    /* height: 360px; */
+    /* height: 500px; */
     /* -- scroll -- */
-    /* overflow: auto;
-    scroll-snap-type: y mandatory; */
+    overflow: auto;
+    scroll-snap-type: y mandatory; 
 }
+
+.cards__list::-webkit-scrollbar {
+    width: 0;
+  }
 
 .cards {
     padding: 16px 27px 20px 20px;
@@ -37,6 +41,10 @@
 
 .cards-border__blue {
     border-top: 4px solid var(--color-button);
+}
+
+.cards-border__default {
+    border-top: 4px solid var(--color-blue-alfa-28);
 }
 
 .cards__primery-text {

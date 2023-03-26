@@ -1,5 +1,14 @@
 /*  Large Devices, Wide Screens */
 @media only screen and (max-width: 1920px) {
+    .cards_list {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        /* -- scroll -- */
+        overflow: auto;
+        scroll-snap-type: y mandatory; 
+    }
     
 }
 

@@ -120,7 +120,7 @@
             "name": "Татьяна Андреева",
             "photo": "./img/executor-photo/TatyanaAndreeva.jpg",
             "workAmount": 1,
-            "color": "cards-border__button"
+            "color": "cards-border__blue"
         } 
     ]
 }

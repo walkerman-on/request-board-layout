@@ -120,11 +120,10 @@ body {
 .lk__dropdown {
     position: relative;
     display: inline-block;
-
 }
 
-.lk__dropdown:hover .dropdown-menu{
-    display: block;
+.dropdown-menu__active{
+    display: none;
 }
 
 .dropdown-menu {
@@ -135,7 +134,6 @@ body {
     box-shadow:  0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     right: 0;
     top: 45px;
-    display: none;
     z-index: 2;
 }
 

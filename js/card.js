@@ -9,7 +9,9 @@ const defaultCard = {
     date: "Неизвестная дата",
     dateChange: "Неизвестная дата",
     executor: "Неизвестный",
-    executorImg: "../img/executor-photo/IvanVasilyev.jpg"
+    executorImg: "../img/executor-photo/DefaultUser.png",
+    workAmount: "--",
+    color: "cards-border__default"
 }
 
 export const renderCards = (card) => {
@@ -18,7 +20,7 @@ export const renderCards = (card) => {
     const template = document.createElement("template");
     template.innerHTML = `
         <li class="cards__item-container">
-            <div class="cards">
+            <div class="cards ${executorData?.color || defaultCard?.color}">
                 <div class="cards__first-block">
                     <p class="first-block__info">
                         <span class="cards__primery-text">${card?.title || defaultCard.title}</span>
@@ -42,7 +44,7 @@ export const renderCards = (card) => {
                         <span class="cards__tertiary-text">Исполнитель</span>
                         <div class="executor">
                             <div class="executor__img-container">
-                                <img class ="executor-img" src="./img/user-avatar.jpg" alt="Аватар исполнителя">
+                                <img class ="executor-img" src="${executorData.photo || defaultCard.executorImg}" alt="Аватар исполнителя">
                             </div>
                             <a href="#" class="executor__link cards__tertiary-text">${executorData.name || defaultCard.executor}</a>                                                                </a>
                         </div>
@@ -51,7 +53,7 @@ export const renderCards = (card) => {
                         <div class="change-card__work">
                             <a href="#" class="change-card__link cards__tertiary-text">Дела</a>
                             <div class="change-card__work-bg">
-                                <span class="change-card__work-amount">3</span>
+                                <span class="change-card__work-amount">${executorData.workAmount || defaultCard.workAmount}</span>
                             </div>
                         </div>
                         <button class="change-card__button" type="button">
@@ -67,7 +69,9 @@ export const renderCards = (card) => {
     const container = document.getElementById(card?.category_id);
     container.appendChild(template.content);
 
+    // const cardBorder = document.querySelector(".cards");
+    
+    // cardBorder.classList.add(`${executorData.color}`)
 
-    const cardBorder = document.querySelector(".cards");
-    cardBorder.classList.add("cards-border__orange")
 }
+
