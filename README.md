@@ -1,12 +1,37 @@
-# 🗂️ Request Board Layout
-
-This is layout of a service request board.
-
-## 👾 Demo
-
-As the functionality is added, the demo will expand.
+## Демо
 <img width="1433" alt="Снимок экрана 2023-07-31 в 22 28 30" src="https://github.com/walkerman-on/request-board/assets/82907949/1de77ccf-b856-4ae2-a1d1-2cb5bbb04234">
+<img width="1440" alt="257876170-165a9fd4-88e6-45fd-8784-beff36b1ae78" src="https://github.com/walkerman-on/request-board-layout/assets/82907949/39ec7c3a-d51d-41cc-b736-4083bbba8148">
 
-## 💻 Languages and Tools:
-<p align="left"><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a>   <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a><a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> </p>
- 
+---
+
+## Описание проекта
+Данный проект представляет из себя верстку доски заявок на сервисное обслуживание для компании «Автоматика-Сервис»
+
+---
+
+## Запуск проекта
+Для запуска сайта на локальном хосте с использованием Live Server, вам потребуется выполнить несколько шагов:
+
+- Установить расширение Live Server для вашего редактора кода
+- Найти файл index.html
+- Нажать правой кнопкой мыши на этот файл в редакторе кода
+- В контекстном меню выберать "Open with Live Server" или аналогичный пункт (название может немного отличаться в зависимости от вашего редактора).
+Live Server автоматически запустит ваш сайт на локальном сервере и откроет его в вашем браузере по умолчанию
+
+Если вы хотите использовать Live Server без редактора кода, вы также можете установить его глобально через npm и запустить его из командной строки:
+
+- `npm install -g live-server` - устанавливаем локальный сервер
+- `live-server` - запуск локального сервера
+
+---
+
+### Работа с данными
+
+Данные берутся из файла `data.json`
+
+---
+
+## Технологии
+HTML, CSS, JavaScript
+
+---
